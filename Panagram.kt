@@ -1,6 +1,9 @@
 import java.util.*
 import kotlin.collections.HashMap
 
+/**
+ * main function
+ */
 fun main() {
     val str1 = Scanner(System.`in`)
     val inpString = str1.nextLine()
@@ -10,6 +13,11 @@ fun main() {
         println("$inpString is not a Panagram")
 }
 
+/**
+ * function to check a string is panagram or not
+ * @param inpString String to be checked for panagram
+ * @return Boolean is panagram
+ */
 fun isPanagram(inpString: String): Boolean {
     val lowerSentence = inpString.lowercase()
     val hashMap : HashMap<Char, Int> = HashMap()
